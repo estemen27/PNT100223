@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style type="text/css">
+			body
+			{
+				background-image: url(Fondo1.jpg);
+				background-repeat: round;
+				color: #FFFFFF;
+			}
+			h1
+			{
+				color: #33FF33;
+			}
+			h2
+			{
+				color: #33FF33;
+			}
+			#Out1{color: #FF0000;}
+			#Out2{color: #FF0000;}
+			#bt1{color: #0000FF;}
+			#bt2{color: #0000FF;}ss
+			#bt3{color: #0000FF;}
+
+		</style>
+		
+		<meta charset="utf-8">
+	
+		<title>Forex PIPS</title>
+	</head>
+
+	<body>
+		<h1>FOREX AND PIPS</h1>
+		<button> BOTON DE PRUEBA</button>
+		<br></br>
+
+		<button onclick= "acc_1()" id="bt1">Hacer muchos pips</button>
+		<br></br>
+		
+		<button onclick="acc_2()" id="bt2">Hacer muchos mas pips</button>
+		<br></br>
+
+		<button onclick="acc_3()" id="bt3">Comprar mi curso por tan solo 700 USD</button>
+		<br></br>
+
+		<h2>REGISTRATE EN FOREX PIPS</h2>
+		<p>Hola Trader!, A continuacion solicitaremos algunos datos personales, esperamos que nos puedas colaborar con tu informacion. ¡GRACIAS y bienvenido a tu familia de FOREX PIPS!</p>
+
+		Primer nombre: <input type="text" name="Recibir TxT1" id="TxT1">
+		Segumdo nombre: <input type="text" name="Recibir TxT2" id="TxT2">
+		<br>
+
+		<p>Primer Apellido.:<input type="text" name="Recibir TxT3"id="TxT3"></p>
+		<p>Segundo Apellido.:<input type="text" name="Recibir TxT4"id="TxT4"></p>
+
+		<button onclick="acc_4()"id="Bt4"> CONCATENAR INFORMACION</button>
+		<br><br>  
+
+		Nombres:&nbsp;<output id="Out1"></output> y Apellidos:&nbsp;<output id="Out2"></output>
+
+		<script type="text/javascript">
+			
+			function acc_1()
+			{
+				alert("Compra el curso para hacer pips")
+			}
+			function acc_2()
+			{
+				alert("Compra el curso para hacer MUCHOS PIPPPPSSSSS")
+			}
+			function acc_3()
+			{
+				alert("No te arrepntiras de caer en esta estafa piramidal ..... ");
+				confirm("PIPPPPSSSSS")
+			}
+			function acc_4()
+			{
+				var NombreCompleto= document.getElementById("TxT1").value+""+document.getElementById("TxT2").value
+				var Apellidos= document.getElementById("TxT3").value+""+document.getElementById("TxT4").value
+				alert(NombreCompleto+Apellidos)
+				document.getElementById("Out1").innerHTML=NombreCompleto
+				document.getElementById("Out2").innerHTML=Apellidos
+
+			}
+
+		</script>
+
+
+
+	</body>
+
+</html>
